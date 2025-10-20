@@ -2,38 +2,63 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Recetario Gourmet - Página Principal</title>
+    <title>Menú Principal de Proyectos - Alba Romero</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        .contenedor-menu {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .item-proyecto {
+            border-left: 5px solid #990000;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            background-color: #fcfcfc;
+        }
+        .item-proyecto a {
+            font-size: 1.5em;
+            color: #5d0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .item-proyecto a:hover {
+            text-decoration: underline;
+        }
+        p {
+            color: #666;
+            margin-top: 5px;
+        }
+        .menu-navegacion {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Recetario Gourmet</h1>
-        <nav class="menu-navegacion">
-            <a href="index.html">Inicio (Índice)</a>
-            <a href="tortilla.html">Tortilla de Patatas</a>
-            <a href="paella.html">Paella</a>
-            <a href="pimientos.html">Pimientos Rellenos</a>
-        </nav>
+        <h1>Portafolio de Proyectos - Alba Romero</h1>
     </header>
+    
+    <div class="contenedor-menu">
+        <h2>Listado de Actividades y Ejercicios</h2>
+        <p>Utiliza los siguientes enlaces para acceder a los proyectos:</p>
 
-    <main>
-        <h2>Bienvenido a nuestro Recetario de Platos Clásicos</h2>
+        <div class="item-proyecto">
+            <a href="recetario_home.html">Actividad 4: Recetario (El Restaurante)</a>
+            <p>Página principal del proyecto del restaurante con menú de recetas y CSS aplicado.</p>
+        </div>
         
-        <p>Esta es la página de inicio de tu colección de recetas. Utiliza el menú superior para navegar a cualquiera de nuestras deliciosas especialidades españolas:</p>
-        
-        <ul style="list-style: none; padding: 0; text-align: center;">
-            <li style="margin: 10px 0;">
-                <a href="tortilla.html" style="font-size: 1.2em; color: #990000; text-decoration: none;">Ver Receta: Tortilla de Patatas</a>
-            </li>
-            <li style="margin: 10px 0;">
-                <a href="paella.html" style="font-size: 1.2em; color: #990000; text-decoration: none;">Ver Receta: Paella</a>
-            </li>
-            <li style="margin: 10px 0;">
-                <a href="pimientos.html" style="font-size: 1.2em; color: #990000; text-decoration: none;">Ver Receta: Pimientos Rellenos</a>
-            </li>
-        </ul>
+        <div class="item-proyecto">
+             <a href="horario.html">Actividad 5: Tabla de Horario Coloreada</a>
+            <p>Tabla con el horario de clases estilizado usando clases CSS.</p>
+        </div>
 
-        <p style="text-align: center; margin-top: 30px;">¡Esperamos que disfrutes cocinando!</p>
-    </main>
+    </div>
+
 </body>
 </html>
