@@ -3,44 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Receta - Tortilla de Patatas</title>
+    
+    <meta name="description" content="Receta tradicional de Tortilla de Patatas española con ingredientes y pasos detallados.">
+    <meta name="keywords" content="tortilla, patatas, receta, cocina española, tradicional">
+    <meta name="author" content="Alba Romero">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+    
+    <header class="cabecera-principal">
         <h1>Recetario Gourmet</h1>
+        
         <nav class="menu-navegacion">
-            <a href="index.html">Inicio (Índice)</a>
+            <a href="recetario_home.html">Inicio Recetas</a>
             <a href="tortilla.html">Tortilla de Patatas</a>
             <a href="paella.html">Paella</a>
             <a href="pimientos.html">Pimientos Rellenos</a>
         </nav>
     </header>
 
-    <main>
-        <h2>Tortilla de patatas</h2>
+    <main class="contenido-receta">
+        
+        <article>
+            <h2>Tortilla de patatas</h2>
 
-        <h3>Ingredientes</h3>
-        <ul class="lista-ingredientes">
-            <li>5 Patatas</li>
-            <li>6 Huevos</li>
-            <li>Una cebolla</li>
-            <li>Aceite y sal</li>
-        </ul>
+            <section class="ingredientes-pasos">
+                
+                <section class="ingredientes">
+                    <h3>Ingredientes</h3>
+                    <ul class="lista-ingredientes">
+                        <li>5 Patatas</li>
+                        <li>6 Huevos</li>
+                        <li>Una cebolla</li>
+                        <li>Aceite y sal</li>
+                    </ul>
+                </section>
+                
+                <section class="instrucciones">
+                    <h3>Pasos en la Elaboración</h3>
+                    <ol class="lista-instrucciones">
+                        <li>Pelar y cortar las patatas y la cebolla.</li>
+                        <li>Poner aceite en una sartén y freír las patatas y la cebolla.</li>
+                        <li>Batir los huevos y poner sal.</li>
+                        <li>Mezclar las patatas con el huevo.</li>
+                        <li>Cuajar la mezcla en una sartén, girándola para que se dore por ambos lados.</li>
+                    </ol>
+                </section>
 
-        <img src="img/tortilla_patatas.jpg" alt="Imagen de una tortilla de patatas" width="450">
+            </section>
 
-        <h3>Pasos en la Elaboración</h3>
-        <ol class="lista-instrucciones">
-            <li><span>Pelar y cortar las patatas y la cebolla.</span></li>
-            <li><span>Poner aceite en una sartén y freír las patatas y la cebolla.</span></li>
-            <li><span>Batir los huevos y poner sal.</span></li>
-            <li><span>Mezclar las patatas con el huevo.</span></li>
-            <li><span>Cuajar la mezcla en una sartén, girándola para que se dore por ambos lados.</span></li>
-        </ol>
+            <img src="img/tortilla_patatas.jpg" alt="Imagen de una tortilla de patatas">
 
-        <p class="descarga">
-            Descarga la receta: <a href="pdf/tortilla_patatas.pdf" target="_blank">Tortilla de Patatas (PDF)</a>
-        </p>
+            <p class="descarga">
+                Descarga la receta: <a href="pdf/tortilla_patatas.pdf" target="_blank">Tortilla de Patatas (PDF)</a>
+            </p>
+        </article>
+
     </main>
+
+    <footer>
+        <p>&copy; 2025 Recetario Gourmet | Proyecto Alba Romero</p>
+    </footer>
+    
 </body>
 </html>

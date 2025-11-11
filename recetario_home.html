@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Recetario - Inicio</title>
+    
+    <meta name="description" content="Página principal del Recetario Gourmet, con enlaces a las mejores recetas.">
+    <meta name="keywords" content="recetas, cocina, gastronomia, menú, español">
+    <meta name="author" content="Alba Romero">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
-    <header>
+    <header class="cabecera-principal">
         <h1>Recetario Gourmet</h1>
+        
         <nav class="menu-navegacion">
             <a href="recetario_home.html">Inicio Recetas</a>
             <a href="tortilla.html">Tortilla de Patatas</a>
@@ -17,10 +23,25 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Selecciona una receta en la parte superior</h2>
-        <p>Todas las recetas del restaurante.</p>
+    <main class="contenido-receta">
+        
+        <article>
+            <h2>Selecciona una Receta</h2>
+            <p>Usa los enlaces a continuación para acceder a los detalles de cada plato:</p>
+
+            <section class="lista-recetas">
+                <h3>Recetas Disponibles</h3>
+                <ul class="lista-enlaces">
+                    <li><a href="tortilla.html">Tortilla de Patatas</a></li>
+                    <li><a href="paella.html">Paella</a></li>
+                    <li><a href="pimientos.html">Pimientos Rellenos</a></li>
+                </ul>
+            </section>
+        </article>
     </main>
     
-    </body>
+    <footer>
+        <p>&copy; 2025 Recetario Gourmet | Proyecto Alba Romero</p>
+    </footer>
+</body>
 </html>

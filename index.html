@@ -2,7 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menú Principal de Proyectos - Alba Romero</title>
+    <title>Portafolio de Proyectos - Alba Romero</title>
+    
+    <meta name="description" content="Portafolio de proyectos web de Alba Romero: Recetario, Horario y más actividades.">
+    <meta name="keywords" content="portafolio, proyectos, html, css, daw">
+    <meta name="author" content="Alba Romero">
+    
     <link rel="stylesheet" href="estilos.css">
     <style>
         .contenedor-menu {
@@ -29,36 +34,38 @@
         .item-proyecto a:hover {
             text-decoration: underline;
         }
-        p {
-            color: #666;
-            margin-top: 5px;
-        }
-        .menu-navegacion {
-            display: none;
+        .menu-navegacion { 
+            display: none; 
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <header class="cabecera-principal">
         <h1>Portafolio de Proyectos - Alba Romero</h1>
     </header>
     
-    <div class="contenedor-menu">
-        <h2>Listado de Actividades y Ejercicios</h2>
-        <p>Utiliza los siguientes enlaces para acceder a los proyectos:</p>
+    <main>
+        <div class="contenedor-menu">
+            <h2>Listado de Actividades y Ejercicios</h2>
+            <p>Utiliza los siguientes enlaces para acceder a los proyectos:</p>
 
-        <div class="item-proyecto">
-            <a href="recetario_home.html">Actividad 4: Recetario (El Restaurante)</a>
-            <p>Página principal del proyecto del restaurante con menú de recetas y CSS aplicado.</p>
-        </div>
-        
-        <div class="item-proyecto">
-             <a href="horario.html">Actividad 5: Tabla de Horario Coloreada</a>
-            <p>Tabla con el horario de clases estilizado usando clases CSS.</p>
-        </div>
+            <section class="item-proyecto">
+                <a href="recetario_home.html">Actividad 4: Recetario (El Restaurante)</a>
+                <p>Página principal del proyecto del restaurante con menú de recetas y CSS aplicado.</p>
+            </section>
+            
+            <section class="item-proyecto">
+                 <a href="horario.html">Actividad 5: Tabla de Horario Coloreada</a>
+                <p>Tabla con el horario de clases estilizado usando clases CSS.</p>
+            </section>
 
-    </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portafolio Alba Romero</p>
+    </footer>
 
 </body>
 </html>
