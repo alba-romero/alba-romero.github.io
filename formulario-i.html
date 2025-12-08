@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 7 - Formulario I</title>
+    <meta name="description" content="Hoja de inscripción para ciclos formativos de Grado Superior.">
+    <meta name="keywords" content="inscripción, grado superior, formulario, educación">
+    <meta name="author" content="Alba Romero">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <h1>Hoja de Inscripción en Ciclos Formativos</h1>
+        <nav class="menu-navegacion">
+            <a href="formularios.html">Volver a Formularios</a>
+        </nav>
+    </header>
+
+    <main class="contenido-formulario">
+        <form action="/submit-form-i" method="POST" class="form-container">
+            <h2>1 Formulario I.</h2>
+            <section class="datos-personales">
+                <h3>Datos Personales</h3>
+                <div class="campos-grupo gris">
+                    <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required>
+                    <label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos">
+                    <label for="dni">DNI:</label><input type="text" id="dni" name="dni" required>
+                    
+                    <label for="localidad">Localidad de Nacimiento:</label><input type="text" id="localidad" name="localidad">
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option value="huelva">Huelva</option>
+                        <option value="sevilla">Sevilla</option>
+                        </select>
+                    <label for="fecha">Fecha de Nacimiento:</label><input type="date" id="fecha" name="fecha">
+
+                    <label for="direccion">Dirección:</label><input type="text" id="direccion" name="direccion">
+                    <label for="cod_postal">Código Postal:</label><input type="text" id="cod_postal" name="cod_postal">
+                </div>
+            </section>
+
+            <section class="forma-acceso">
+                <h3>Forma de Acceso</h3>
+                <div class="campos-grupo naranja">
+                    <label><input type="radio" name="acceso" value="directo"> Directo</label>
+                    <label><input type="radio" name="acceso" value="bachillerato"> Bachillerato Log Modalidad</label>
+                    <label><input type="radio" name="acceso" value="experimental"> Experimental</label>
+                    <label><input type="radio" name="acceso" value="cou"> COU Opción <input type="text" name="cou_opcion"></label>
+                    <label><input type="radio" name="acceso" value="fp2"> FP2</label>
+                    <label><input type="radio" name="acceso" value="otros"> Otros (especifique) <input type="text" name="otros_acceso"></label>
+                    <label><input type="radio" name="acceso" value="prueba_libre"> Prueba Libre</label>
+                </div>
+            </section>
+
+            <section class="documentos-adjuntos">
+                <h3>Documentos Adjuntos</h3>
+                <div class="campos-grupo rojo">
+                    <label><input type="checkbox" name="doc_dni"> Fotocopia DNI</label>
+                    <label><input type="checkbox" name="doc_academico"> Certificado Académico</label>
+                    <label><input type="checkbox" name="doc_otros"> Otros documentos (especifique) <input type="text" name="otros_documentos"></label>
+                </div>
+            </section>
+
+            <div class="botones-formulario">
+                <input type="submit" value="Enviar Solicitud">
+                <input type="reset" value="Limpiar Datos">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Actividad 7 | Formulario I</p>
+    </footer>
+</body>
+</html>

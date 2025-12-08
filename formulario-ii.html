@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 7 - Formulario II</title>
+    <meta name="description" content="Cuestionario de inscripción para el club de Amigos de la Informática.">
+    <meta name="keywords" content="club, informática, cuestionario, aficiones">
+    <meta name="author" content="Alba Romero">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <h1>Formulario para el Club de "Amigos de la Informática"</h1>
+        <nav class="menu-navegacion">
+            <a href="formularios.html">Volver a Formularios</a>
+        </nav>
+    </header>
+
+    <main class="contenido-formulario">
+        <form action="/submit-form-ii" method="POST" class="form-container">
+            <h2>2 Formulario II</h2>
+            <section class="datos-personales-club">
+                <h3>Datos personales</h3>
+                <div class="campos-grupo marron">
+                    <p>Nombre: <input type="text" name="nombre_club" placeholder=""></p>
+                    <p>Domicilio: <input type="text" name="domicilio" placeholder="<calle, número y localidad>"></p>
+                    <p>País de origen: 
+                        <select name="pais_origen">
+                            <option value="españa">España</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                    <p>Fecha de nacimiento: <input type="text" name="fecha_nac" placeholder="dd/mm/aaaa"></p>
+                    <p>Correo electrónico: <input type="email" name="email"></p>
+                    <p>Teléfono: <input type="tel" name="telefono"></p>
+                    <p>Estado civil: 
+                        <label><input type="radio" name="estado_civil" value="soltero"> Solter@</label>
+                        <label><input type="radio" name="estado_civil" value="casado"> Casad@</label>
+                        <label><input type="radio" name="estado_civil" value="separado"> Separad@</label>
+                        <label><input type="radio" name="estado_civil" value="viudo"> Viud@</label>
+                    </p>
+                    <p>Sexo: 
+                        <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                        <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                    </p>
+                </div>
+            </section>
+
+            <section class="otra-informacion-club">
+                <h3>Otra información de interés</h3>
+                <div class="campos-grupo naranja">
+                    <p>Seleccione los componentes electrónicos con los que habitualmente trabajas:</p>
+                    <select name="componentes_trabajo" multiple size="4">
+                        <option value="movil">Móvil</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="ordenador">Ordenador</option>
+                        <option value="ebook">Ebook</option>
+                    </select>
+
+                    <p>Seleccione tus actividades favoritas:</p>
+                    <label><input type="checkbox" name="actividad_favorita" value="deporte"> Hacer deporte</label>
+                    <label><input type="checkbox" name="actividad_favorita" value="amigos"> Salir con mis amigos</label>
+                    <label><input type="checkbox" name="actividad_favorita" value="series"> Ver series, pelis...</label>
+                    <label><input type="checkbox" name="actividad_favorita" value="sendero"> Realizar rutas de senderiso</label>
+                    <label><input type="checkbox" name="actividad_favorita" value="cine"> Ir al cine</label>
+                    <label><input type="checkbox" name="actividad_favorita" value="musica"> Escuchar música</label>
+
+                    <p>Explique brevemente el motivo por el que desea ingresar en nuestro club:</p>
+                    <textarea name="motivo_ingreso" rows="4" cols="50"></textarea>
+
+                    <p>Elige o escribe tu peli favorita: <input type="text" name="peli_favorita"></p>
+                </div>
+            </section>
+
+            <div class="botones-formulario-club">
+                <input type="submit" value="Enviar" class="boton-enviar-club">
+                <input type="reset" value="Cancelar" class="boton-cancelar-club">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Actividad 7 | Formulario II</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante - Formularios de Reserva y Contacto</title>
+    <meta name="description" content="Formularios para reservar, contactar y dejar una reseña en el restaurante.">
+    <meta name="keywords" content="reserva, contacto, reseña, restaurante, formulario">
+    <meta name="author" content="Alba Romero">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <h1>Formularios del Restaurante</h1>
+        <nav class="menu-navegacion">
+            <a href="recetario_home.html">Volver a Recetas</a>
+        </nav>
+    </header>
+
+    <main class="contenido-formulario">
+        
+        <section class="seccion-formulario reserva">
+            <h2>3.1 Formulario de realizar una reserva.</h2>
+            <form action="/reserva" method="POST" class="formulario-compacto">
+                <h3>Haz una reserva</h3>
+                
+                <div class="campo-doble">
+                    <input type="text" name="nombre_reserva" placeholder="Su nombre" required>
+                    <input type="number" name="num_clientes" placeholder="Número de clientes" required min="1">
+                </div>
+
+                <div class="campo-doble">
+                    <input type="email" name="correo_reserva" placeholder="Su correo electrónico" required>
+                    <input type="tel" name="telefono_reserva" placeholder="Su teléfono">
+                </div>
+                
+                <div class="campo-doble">
+                    <input type="date" name="fecha_reserva" placeholder="Fecha de la reserva" required>
+                    <input type="time" name="hora_reserva" placeholder="Hora de la reserva" required>
+                </div>
+
+                <div class="campo-completo">
+                    <input type="text" name="mensaje_reserva" placeholder="Su mensaje">
+                </div>
+                
+                <div class="terminos">
+                    <small>Si desea saber cómo protegemos sus datos, consulte nuestra <a href="#">Política de privacidad</a></small>
+                </div>
+
+                <button type="submit" class="boton-reserva">SOLICITAR RESERVA</button>
+            </form>
+        </section>
+
+        <section class="seccion-formulario contacto">
+            <h2>3.2 Formulario de contactar con el restaurante</h2>
+            <form action="/contacto" method="POST" class="formulario-compacto">
+                <h3>Envíenos su mensaje</h3>
+
+                <div class="campo-triple">
+                    <input type="text" name="nombre_contacto" placeholder="Su nombre" required>
+                    <input type="email" name="correo_contacto" placeholder="Su correo electrónico" required>
+                    <input type="tel" name="telefono_contacto" placeholder="Su teléfono">
+                </div>
+
+                <div class="campo-completo">
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                </div>
+                
+                <div class="campo-completo">
+                    <textarea name="mensaje_contacto" placeholder="Su mensaje (máx 500 caracteres)" maxlength="500"></textarea>
+                    <small>0/500</small>
+                </div>
+
+                <button type="submit" class="boton-enviar-contacto">ENVIAR</button>
+            </form>
+        </section>
+
+        <section class="seccion-formulario reseña">
+            <h2>3.3 Formulario para dejar una reseña en de un plato.</h2>
+            <form action="/resenia" method="POST">
+                <h3>Deje su reseña</h3>
+                <label for="plato">Plato reseñado:</label>
+                <input type="text" id="plato" name="plato_resenia" required>
+
+                <label for="puntuacion">Puntuación:</label>
+                <select id="puntuacion" name="puntuacion_resenia">
+                    <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                    <option value="4">⭐⭐⭐⭐ Muy Bueno</option>
+                    <option value="3">⭐⭐⭐ Normal</option>
+                    <option value="2">⭐⭐ Malo</option>
+                    <option value="1">⭐ Terrible</option>
+                </select>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario_resenia" rows="4"></textarea>
+
+                <button type="submit" class="boton-resenia">Enviar Reseña</button>
+            </form>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Actividad 7 | Formularios del Restaurante</p>
+    </footer>
+</body>
+</html>
